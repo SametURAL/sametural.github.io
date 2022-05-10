@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="description" content="  Web Tasarım 2 Dersi Vize Ödevi ">
+    <meta name="author" content="Samet URAL - 21430070051">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SametURAL -21430070051</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    
+    <style>
+
+        .category{
+            float: left;
+            
+        }
+        .category > ul > li{
+            display: inline-block;
+            padding: 10px;
+        }
+        .category > ul > li >a{
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            list-style-type: none;
+        }
+        .category > ul > li >a:hover{
+            color: orange;
+        }
+        .logo{
+            float: left;
+        }
+        .logo > img {
+            width: 100px;
+            height: auto;
+            max-width: 100px;
+        }
+
+    </style>
+</head>
+<body style="background-color:rgb(201, 184, 184);">
+   <div class="container-fluid mt-2">
+    <div class="row" style="height: 100px;">            
+
+        <div class="col-md-4 col-lg-4 col-sm-4 ">
+        <div class="logo " style="margin-left: 5%;">
+        <img src="12.jpg">
+        <nav style="font-size: x-large;color: rgb(73, 41, 148);" >Bootstrap 5 </nav>
+        </div>
+            
+        </div>
+        <h1 style="text-align: center;"> <b>İlerleme Çubukları ve İplikçiler </b> </h1>
+        <hr style="height:10px ;">
+        </div>
+        </div>
+       
+
+       <br>
+       <br>
+       <br>
+       <br>
+    
+       
+    <div class="container mt-5">
+
+    <h2><b>İlerleme Çubuğu</b></h2>
+    <hr style="height: 5px;">   
+
+    <br>
+    <br>
+
+    <nav><h3>Temel İlerleme Çubuğu</h3>
+    Bir kullanıcının bir süreçte ne kadar uzakta olduğunu göstermek için bir ilerleme çubuğu kullanılabilir.
+    </nav>
+
+    <br>
+    <br>
+
+    <pre  style="color: green;"><code> 
+    &lt div  class="progress" &gt 
+    &lt div class="progress-bar" style="width:70%" &gt &lt /div &gt  
+    &lt /div &gt
+    </code></pre>
+    
+    <br>
+
+
+    <div style="margin-top: 15px;" class="progress">
+      <div class="progress-bar" style="width:70%"></div>
+    </div>
+
+    <br>
+    <br>
+
+  <nav> <h3> İlerleme Çubuğu Yüksekliği </h3>
+    İlerleme çubuğunun yüksekliği varsayılan olarak 1rem şeklindedir. 
+    Boyutunu değiştirmek için CSS height özelliğini kullanılır.
+    İlerleme kabı ve ilerleme çubuğu için aynı yüksekliği ayarlamamı gerekir.
+    </nav>
+
+    <br>
+    <br>
+
+    <pre  style="color: green;"><code> 
+    &lt div  class="progress" &gt 
+    &lt div class="progress-bar" style="width:40% ; height:20px" &gt &lt /div &gt  
+    &lt /div &gt 
+    </code></pre>
+
+    <br>
+
+
+    <div style="margin-top: 15px;" style="height:20px" class="progress"  >
+     <div class="progress-bar" style="width:40% ; height:20px"></div>
+    </div>
+
+    <br>
+    <br>
+
+    <nav> <h3> İlerleme Çubuğu Etiketleri </h3>
+    Görünür yüzdeyi göstermek için ilerleme çubuğunun içine metin eklenir.
+    </nav>
+
+    <br>
+    <br>
+
+    <pre  style="color: green;"><code> 
+    &lt div  class="progress" &gt 
+    &lt div class="progress-bar" style="width:70%"  &gt 70% &lt /div &gt  
+    &lt /div &gt 
+    </code></pre>
+
+    <br>
+  
+    
+    <div style="margin-top:15px;" class="progress">
+    <div class="progress-bar" style="width:70%">70%</div>
+        
+    </div>
+
+    <br>
+    <br>
+
+    <nav> <h3> Renkli İlerleme Çubukları </h3>
+    Varsayılan olarak ilerleme çubuğu mavidir.
+    Rengini değiştirmek için bağlamsal arka plan sınıflarından herhangi birini kullanılır.
+    </nav>
+   
+    <br>
+    <br>
+
+    <pre  style="color: green;"><code> 
+    &lt div  class="progress" &gt
+    &lt div class="progress-bar" style="width:10% " &gt &lt /div &gt  
+    &lt /div &gt
+
+    
+    &lt div  class="progress" &gt
+    &lt div class="progress-bar bg-success" style="width:20%" &gt &lt /div &gt  
+    &lt /div &gt 
+
+  
+    &lt div  class="progress" &gt 
+    &lt div class="progress-bar bg-info" style="width:30% " &gt &lt /div &gt  
+    &lt /div &gt 
+    
+
+    &lt div  class="progress" &gt 
+    &lt div class="progress-bar bg-warning" style="width:40% " &gt &lt /div &gt 
+    &lt /div &gt 
+
+
+    &lt div  class="progress" &gt 
+    &lt div class="progress-bar bg-danger" style="width:50% " &gt &lt /div &gt  
+    &lt /div &gt
+
+
+    &lt div  class="progress" &gt >
+    &lt div class="progress-bar bg-white" style="width:60% " &gt &lt /div &gt  
+    &lt /div &gt 
+    
+
+    &lt div  class="progress" &gt
+    &lt div class="progress-bar bg-secondary" style="width:70% " &gt &lt /div &gt 
+    &lt /div &gt 
+    </code></pre>
+    
+
+    <br>
+
+     
+    <div  style="margin-top:15px;" class="progress">
+    <div class="progress-bar" style="width:10%"></div>
+    </div>
+  
+    <div  style="margin-top:15px;" class="progress">
+    <div class="progress-bar bg-success" style="width:20%"></div>
+    </div>
+  
+    <div style="margin-top:15px;"  class="progress">
+    <div class="progress-bar bg-info" style="width:30%"></div>
+    </div>
+  
+    <div  style="margin-top:15px;"  class="progress">
+    <div class="progress-bar bg-warning" style="width:40%"></div>
+    </div>
+  
+    <div  style="margin-top:15px;" class="progress">
+    <div class="progress-bar bg-danger" style="width:50%"></div>
+    </div>
+
+    <div  style="margin-top:15px;" class="progress border">
+    <div class="progress-bar bg-white" style="width:60%"></div>
+    </div>
+      
+  
+    <div  style="margin-top:15px;" class="progress">
+    <div class="progress-bar bg-secondary" style="width:70%"></div>
+    </div>
+
+    <br>
+    <br>
+
+    <nav> <h3> Çizgili İlerleme Çubukları </h3>
+    <b>"progress-bar-striped" </b>  kullanarak ilerleme çubuklarına şerit eklenir. 
+    </nav>
+
+    <br>
+    <br>
+
+    <pre  style="color: green;"><code>
+    &lt div  class="progress" &gt 
+    &lt div class="progress-bar progress-bar-striped" style="width:40% " &gt &lt /div &gt  
+    &lt /div &gt
+    </code></pre>
+
+    <br>
+    
+
+    <div style="margin-top:15px;" class="progress">
+    <div class="progress-bar progress-bar-striped" style="width:40%"></div>
+    </div>
+
+    <br>
+    <br>
+
+    <nav> <h3>Çoklu İlerleme Çubuğu </h3>
+    İlerleme Çubukları çoklu kullanabilir.
+    </nav>
+
+    <br>
+    <br>
+
+    <pre  style="color: green;"><code>
+    &lt div  class="progress" &gt
+    &lt div class="progress-bar bg-success" style="width:40% " &gt &lt /div &gt  
+    Free Space &lt /div &gt 
+    &lt div class="progress-bar bg-warning" style="width:10% " &gt &lt /div &gt  
+    Warning &lt /div &gt 
+    &lt div class="progress-bar bg-danger" style="width:20% " &gt &lt /div &gt 
+    Danger &lt /div &gt 
+    &lt /div &gt 
+    </code></pre>
+    
+
+    <div style="margin-top:15px;" class="progress">
+    <div class="progress-bar bg-success" style="width:40%">
+    Free Space
+    </div>
+    <div class="progress-bar bg-warning" style="width:10%">
+    Warning
+    </div>
+    <div class="progress-bar bg-danger" style="width:20%">
+    Danger
+    </div>
+    </div>
+          
+    <br>
+    <br>
+
+    <nav> <h3>Hareketli İlerleme Çubuğu </h3>
+    <b>"progress-bar-animated" </b>  kullanarak ilerleme çubuklarına şerit eklenir. 
+    </nav>
+    
+    <br>
+    <br>
+
+    <pre  style="color: green;"><code>
+    &lt div  class="progress" &gt
+    &lt div class="progress-bar-striped progress-bar-animated" style="width:40% " &gt &lt /div &gt 
+    &lt /div &gt 
+    </code></pre>
+    
+    
+    
+    <div style="margin-top:15px;" class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+            
+    <h2><b>İplikçiler</b></h2>
+    <hr  style="height: 5px;" >
+
+    <br>
+    <br>
+
+    <nav> <h3>İplikçiler </h3>
+    Bir döndürücü/yükleyici oluşturmak için <b>".spinner-border"</b> sınıfı kullanılır.
+    </nav>
+
+    <br>
+    <br>
+    
+    <pre style="color: green;"> <code>
+
+    &lt div  class="spinner-border" &gt &lt /div &gt 
+
+    </code></pre>
+   
+    
+    <div style="margin-top: 15px;" class="spinner-border"></div>
+    
+    <br>
+    <br>
+
+    <nav> <h3>Renkli İplikçiler </h3>
+    Döndürücüye renk eklemek için herhangi bir metin rengi yardımcı programını kullanılır.
+    </nav>
+
+    <br>
+
+    <pre style="color: green;"><code> 
+    
+        &lt div  class="spinner-border text-muted" &gt &lt /div &gt
+
+        &lt div  class="spinner-border text-primary" &gt &lt /div &gt
+
+        &lt div  class="spinner-border text-success" &gt &lt /div &gt
+
+        &lt div  class="spinner-border text-info" &gt &lt /div &gt
+
+        &lt div  class="spinner-border text-warning" &gt &lt /div &gt
+
+        &lt div  class="spinner-border text-danger" &gt &lt /div &gt
+
+        &lt div  class="spinner-border text-secondary" &gt &lt /div &gt
+
+
+    </code></pre>
+
+
+ 
+    
+    <div class="spinner-border text-muted"></div>
+    <div class="spinner-border text-primary"></div>
+    <div class="spinner-border text-success"></div>
+    <div class="spinner-border text-info"></div>
+    <div class="spinner-border text-warning"></div>
+    <div class="spinner-border text-danger"></div>
+    <div class="spinner-border text-secondary"></div>
+
+    <br>
+    <br>
+    <br>
+
+    <nav> <h3>Büyüyen İplikçiler </h3>
+    <b>".spinner-grow"</b> Döndürücünün/yükleyicinin "döndürme" yerine büyümesini için sınıfı kullanılır.
+    </nav>
+
+    <br>
+    <br>
+
+    <pre style="color: green;"><code> 
+        &lt div  class="spinner-grow text-muted" &gt &lt /div &gt
+
+        &lt div  class="spinner-grow text-primary" &gt &lt /div &gt
+
+        &lt div  class="spinner-grow text-success" &gt &lt /div &gt
+
+        &lt div  class="spinner-grow  text-info" &gt &lt /div &gt
+
+        &lt div  class="spinner-grow text-warning" &gt &lt /div &gt
+
+        &lt div  class="spinner-grow text-danger" &gt &lt /div &gt
+
+        &lt div  class="spinner-grow text-secondary" &gt &lt /div &gt
+
+        &lt div  class="spinner-grow text-dark" &gt &lt /div &gt
+
+        &lt div  class="spinner-grow text-light" &gt &lt /div &gt
+
+
+    </code></pre>
+
+    <div class="spinner-grow text-muted"></div>
+    <div class="spinner-grow text-primary"></div>
+    <div class="spinner-grow text-success"></div>
+    <div class="spinner-grow text-info"></div>
+    <div class="spinner-grow text-warning"></div>
+    <div class="spinner-grow text-danger"></div>
+    <div class="spinner-grow text-secondary"></div>
+    <div class="spinner-grow text-dark"></div>
+    <div class="spinner-grow text-light"></div>
+
+    <br>
+    <br>
+    <br>
+
+    <nav> <h3>İplik Makinesi Boyutu </h3>
+        Daha küçük bir döndürücü oluşturmak için <b> ".spinner-border-sm"</b> veya <b>".spinner-grow-sm"</b>  öğesini kullanılır.
+    </nav>
+
+    <br>
+    <br>
+
+    <pre style="color: green;"><code> 
+
+    &lt div  class="spinner-border spinner-border-sm" &gt &lt /div &gt
+
+    &lt div  class="spinner-grow spinner-grow-sm" &gt &lt /div &gt
+        
+
+    </code></pre>
+
+
+    <br>
+    <br>
+
+    <div class="spinner-border spinner-border-sm"></div>
+    <div class="spinner-grow spinner-grow-sm"></div>
+    
+    <br>
+    <br>
+    <br>
+
+    <nav> <h3>Döner Düğmeler </h3>
+        Bir düğmeye metinli veya metinsiz olarak da döndürücüler eklenebilir.
+    </nav>
+
+    <br>
+    <br>
+
+    <pre style="color: green;"><code>
+
+    &lt button class="btn btn-primary" &gt 
+    
+    &lt div  class="spinner-border spinner-border-sm" &gt &lt /div &gt
+
+    &lt /button &gt
+
+
+    &lt button class="btn btn-primary" &gt 
+    
+    &lt div  class="spinner-border spinner-border-sm" &gt &lt /div &gt
+    
+    Loading..
+    
+    &lt /button &gt
+    
+
+    </code></pre>
+
+
+    
+
+    
+
+    <br>
+    <br>
+
+    <button class="btn btn-primary">
+    <span class="spinner-border spinner-border-sm"></span>
+    </button>
+      
+    <button class="btn btn-primary">
+    <span class="spinner-border spinner-border-sm"></span>
+    Loading..
+    </button>
+
+    <br>
+    
+
+    </section>
+    <footer id="footer" style="margin: 0px; padding: 15px; background-color: black; font-family: Arial, Helvetica, sans-serif; width: 100%; margin-top: 100px;">
+
+    <div align ="center" style="color: white;">Tüm hakları s҉̞̫̽͂a҉̩̥̳̮̮̾̌̈́ṱ̴̠̠͑̒ı҈͙͔̣̫̂͗̍̚l̶͕͔͎̬̄̎͂͋ı̸̪̤̬͚̀͐̌̄̚ͅk̵̩͇̩̲̏̃͐̓  &̶͙̘͙̗́̋̏c̸͈̪̖̎̍̐̏ó̵̳̝̀̄͒͌p̸͈̙̆̌̾̔̃y̵̘͕͔̣̐̎́;҈̪̐̂̌́ͅ |̴̙̥́̏̎ 2̸͙̩̮̜̤̆͌̇̉0̶̜̬̯̏̑2҉̰͈̰̈́͛̓͑2̷͙̳̙͈͇͗͌ </div>
+    </footer>   
+
+</body>
+</html>
